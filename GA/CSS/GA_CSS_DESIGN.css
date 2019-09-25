@@ -17,7 +17,7 @@ a:visited
 #SearchBar
 {
 	border: none;
-	padding: 0px;
+	font-family: 'Roboto', sans-serif;
 }
 #SearchBar:focus
 {
@@ -46,10 +46,12 @@ border: solid 1px orange;
 .Button_Footer
 {
     border-radius: 7px;
+    font-family: 'Roboto', sans-serif;
 }
 .Button_Footer:Hover
 {
-    background-color: rgba(210, 210, 210, 0.9);
+    /* background-color: rgba(210, 210, 210, 0.4); */
+    box-shadow: 0px 0px 10px #cc8b16;
 }
 
 #Top
@@ -61,6 +63,4 @@ border-bottom: 1px solid orange;
 }
 
 #Top_Text
-{
-margin-left: 10px;
-}
+{font-family: 'Roboto', sans-serif;margin-left: 10px;}
