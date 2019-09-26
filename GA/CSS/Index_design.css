@@ -1,0 +1,82 @@
+@font-face
+{
+	font-family: test;
+	src: url(whatthefuck);
+}
+
+Body
+{
+	margin: 0px;
+}
+a
+{
+	text-decoration: none;
+	color:black;
+}
+
+a:visited
+{
+	color:black;
+	text-decoration: none;
+}
+#Img_searchBar
+{
+	height: 100%
+}
+#SearchBar
+{
+	border: none;
+	font-family: 'Roboto', sans-serif;
+}
+#SearchBar:focus
+{
+	outline: 0px;
+}
+
+#Main_container
+{
+	
+border-radius: 20px;
+	
+box-shadow: 0px 0px 5px grey;
+	
+border: solid 1px #9c9898;
+}
+
+#Button_searchBar
+{
+	cursor: pointer;
+	border: none;
+	background-color: white;
+	padding: 0px;
+}
+#Logo_container
+{
+	
+font-size: 40px;
+}
+
+#Footer
+{background-color: #e4e4e4;}
+
+.Button_Footer
+{
+    border-radius: 7px;
+    font-family: 'Roboto', sans-serif;
+}
+.Button_Footer:Hover
+{
+    
+    box-shadow: 0px 0px 5px #000000;
+}
+
+#Top
+{
+	
+font-size: larger;
+	
+border-bottom: 1px solid #9c9b97;
+}
+
+#Top_Text
+{font-family: 'Roboto', sans-serif;margin-left: 10px;}

@@ -1,0 +1,65 @@
+body
+{
+	height: 100vh;
+	margin: 0px;
+}
+
+.URL_container
+{
+	
+width: 40vw;
+	
+margin-left: 5vw;
+}
+
+#Top_search
+{
+	
+justify-content: end;
+	
+display: flex;
+	
+height: 5%;
+	
+align-items: center;
+}
+
+
+#Main_container
+{
+	
+justify-content: space-evenly;
+	
+height: 100vh;
+	
+display: flex;
+	
+flex-direction: column;
+}
+
+#SearchBar
+{
+	
+width: 99vw;
+	
+margin-left: 5px;
+}
+
+#Search_container
+{
+    width: 80%;
+}
+
+.Button_Footer
+{
+	
+display: flex;
+	
+height: 30px;
+	
+min-width: 110px;
+	
+justify-content: center;
+	
+align-items: center;
+}
