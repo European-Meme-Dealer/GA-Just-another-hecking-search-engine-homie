@@ -1,8 +1,9 @@
 
 Body
 {
-	margin: 0px;
-	overflow: hidden
+	overflow-x: hidden;
+	overflow-y: hidden;
+	font-family: 'Roboto',SANS-SERIF;
 }
 a
 {
@@ -55,33 +56,20 @@ a:visited
 
 #Main_container
 {
-	
 }
 
-.URL
-{
-    font-size: 35px;
-}
 
-.URL_info
-{
-	
-color: gray;
-}
 
 #Footer
 {
 	background-color: #e4e4e4;
 }
 
-.URL_container
-{
-	
-border-bottom: 1px solid #040404;
-	
-font-family: 'Roboto', SANS-SERIF;
-}
+#Title
+{font-size: 40px;}
 
+#Text
+{font-size: 23px;}
 .Button_Footer
 {
     border-radius: 7px;

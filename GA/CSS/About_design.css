@@ -1,19 +1,35 @@
 
 Body
 {
-	margin: 0px;
-	overflow: hidden
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 a
 {
 	text-decoration: none;
-	color:black;
+	color:black
 }
 
 a:visited
 {
 	color:black;
 	text-decoration: no
+}
+
+#Title
+{
+	
+font-family: 'Roboto', sans-serif;
+	
+font-size: 45px;
+}
+
+#Text
+{
+	
+font-size: 20px;
+	
+font-family: 'Roboto', sans-serif;
 }
 
 #SearchBar
@@ -48,38 +64,16 @@ a:visited
 	display: none;
 }
 
+
 #Img_searchBar
 {
 	height: 100%
 }
 
-#Main_container
-{
-	
-}
-
-.URL
-{
-    font-size: 35px;
-}
-
-.URL_info
-{
-	
-color: gray;
-}
 
 #Footer
 {
 	background-color: #e4e4e4;
-}
-
-.URL_container
-{
-	
-border-bottom: 1px solid #040404;
-	
-font-family: 'Roboto', SANS-SERIF;
 }
 
 .Button_Footer
