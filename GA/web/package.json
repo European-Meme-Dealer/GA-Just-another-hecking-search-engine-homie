@@ -1,0 +1,17 @@
+{
+  "name": "jahseh_search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "develop": "nodemon app.js"
+  },
+  "author": "Oliver Grass",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.3"
+  }
+}

@@ -1,0 +1,66 @@
+Body
+{
+	margin: 0px;
+}
+a
+{
+	text-decoration: none;
+	color:black;
+}
+
+a:visited
+{
+	color:black;
+	text-decoration: none;
+}
+
+#SearchBar
+{
+	border: none;
+	font-family: 'Roboto', sans-serif;
+}
+#SearchBar:focus
+{
+	outline: 0px;
+}
+
+#Main_container
+{
+	
+border-radius: 5px;
+	
+border: solid 1px orange;
+	
+}
+
+#Button
+{
+	border: none;
+	background-color: white;
+	padding: 0px;
+}
+
+#Footer
+{border-top: solid 1px orange;}
+
+.Button_Footer
+{
+    border-radius: 7px;
+    font-family: 'Roboto', sans-serif;
+}
+.Button_Footer:Hover
+{
+    /* background-color: rgba(210, 210, 210, 0.4); */
+    box-shadow: 0px 0px 10px #cc8b16;
+}
+
+#Top
+{	
+	
+font-size: larger;
+	
+border-bottom: 1px solid orange;
+}
+
+#Top_Text
+{font-family: 'Roboto', sans-serif;margin-left: 10px;}

@@ -1,0 +1,76 @@
+body
+{
+	height: 100vh;
+	margin: 0px;
+}
+
+
+#Top_search
+{
+	
+justify-content: end;
+	
+display: flex;
+	
+height: 5%;
+	
+align-items: center;
+}
+
+
+#Main_container
+{
+	
+align-items: center;
+	
+height: 87vh;
+	
+display: flex;
+	
+justify-content: space-evenly;
+	
+flex-direction: column;
+}
+#Title
+{align-items: center;display: flex;margin: 5px 0px 0px 0px;justify-content: center;}
+
+#Text
+{
+	
+align-items: center;
+	
+display: flex;
+	
+width: 70%;
+	
+margin: 0px 30px 0px 30px;
+	
+justify-content: center;
+}
+
+#SearchBar
+{
+	
+width: 99vw;
+	
+margin-left: 5px;
+}
+
+#Search_container
+{
+    width: 80%;
+}
+
+.Button_Footer
+{
+	
+display: flex;
+	
+height: 30px;
+	
+min-width: 110px;
+	
+justify-content: center;
+	
+align-items: center;
+}

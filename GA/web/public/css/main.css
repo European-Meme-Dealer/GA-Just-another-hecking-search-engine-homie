@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "VagRoundedBold";
+  src: url("../fonts/VAGRoundedStd-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "VagRoundedThin";
+  src: url("../fonts/VAGRoundedStd-Thin.otf") format("opentype");
+}
+
+body {
+  font-family: VagRoundedThin, sans-serif;
+}

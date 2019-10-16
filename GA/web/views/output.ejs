@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+
+<head>
+	<title> JAHSEH </title>
+	<meta charset='UTF-8'>
+	<link rel='Icon' href='../img/XTree.png'>
+	<link rel='Stylesheet' href='../css/main.css'>
+	<link rel='Stylesheet' href='../css/output_design.css'>
+	<link rel='Stylesheet' href='../css/output_layout.css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<%- include('partials/top_search'); -%>
+
+	<% if (easteregg == 'homer') { %>
+	<object data="../img/homer.svg" width="400" height="400"></object>
+	<% } %>
+
+	<div id='Main_container'>
+
+		<% obj.forEach(o => { %>
+
+		<div class='URL_container'>
+			<div class='URL'> <%= o.title %> </div>
+			<div class='URL_info'><a href="<%= o.url %>"><%= o.url %></a> </div>
+		</div>
+
+		<% }); %>
+
+	</div>
+
+	<%- include('partials/footer'); -%>
+
+</body>
+
+</html>

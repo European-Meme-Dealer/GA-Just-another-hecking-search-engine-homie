@@ -1,0 +1,258 @@
+[
+  {
+    "title": "Rome - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rome",
+    "body": [
+      ["rome", 401],
+      ["city", 226],
+      ["roman", 112],
+      ["archived", 99],
+      ["retrieved", 97],
+      ["original", 96],
+      ["world", 75],
+      ["also", 74],
+      ["italian", 71],
+      ["italy", 66]
+    ]
+  },
+  {
+    "title": "Castel Sant'Angelo - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Castel_Sant%27Angelo",
+    "body": [
+      ["palazzo", 28],
+      ["sant", 25],
+      ["rome", 24],
+      ["mw-parser-output", 24],
+      ["angelo", 23],
+      ["castel", 20],
+      ["museum", 18],
+      ["villa", 16],
+      ["hadrian", 15],
+      ["tomb", 15]
+    ]
+  },
+  {
+    "title": "St. Peter's Basilica - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/St._Peter%27s_Basilica",
+    "body": [
+      ["peter", 196],
+      ["basilica", 160],
+      ["vatican", 99],
+      ["saint", 84],
+      ["dome", 81],
+      ["rome", 73],
+      ["pope", 68],
+      ["michelangelo", 59],
+      ["church", 58],
+      ["building", 51]
+    ]
+  },
+  {
+    "title": "Literal translation - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Literal_translation",
+    "body": [
+      ["translation", 56],
+      ["mw-parser-output", 22],
+      ["literal", 20],
+      ["template", 13],
+      ["edit", 13],
+      ["value", 11],
+      ["limit", 11],
+      ["wikipedia", 9],
+      ["machine", 9],
+      ["language", 8]
+    ]
+  },
+  {
+    "title": "Trevi Fountain - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Trevi_Fountain",
+    "body": [
+      ["fountain", 57],
+      ["trevi", 40],
+      ["palazzo", 31],
+      ["rome", 29],
+      ["mw-parser-output", 22],
+      ["retrieved", 19],
+      ["villa", 16],
+      ["may", 15],
+      ["piazza", 15],
+      ["maria", 14]
+    ]
+  },
+  {
+    "title": "Ponte Sant'Angelo - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Ponte_Sant%27Angelo",
+    "body": [
+      ["bridge", 63],
+      ["palazzo", 28],
+      ["ponte", 26],
+      ["mw-parser-output", 22],
+      ["roman", 19],
+      ["sant", 18],
+      ["piazza", 16],
+      ["villa", 16],
+      ["angelo", 14],
+      ["rome", 14]
+    ]
+  },
+  {
+    "title": "Geographic coordinate system - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Geographic_coordinate_system",
+    "body": [
+      ["system", 44],
+      ["latitude", 36],
+      ["earth", 35],
+      ["coordinate", 33],
+      ["coordinates", 32],
+      ["longitude", 31],
+      ["mw-parser-output", 27],
+      ["datum", 25],
+      ["geographic", 20],
+      ["edit", 20]
+    ]
+  },
+  {
+    "title": "Pantheon, Rome - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Pantheon,_Rome",
+    "body": [
+      ["pantheon", 137],
+      ["rome", 54],
+      ["roman", 44],
+      ["temple", 35],
+      ["dome", 35],
+      ["maria", 35],
+      ["building", 32],
+      ["agrippa", 31],
+      ["mw-parser-output", 29],
+      ["palazzo", 28]
+    ]
+  },
+  {
+    "title": "Latin - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Latin_language",
+    "body": [
+      ["latin", 373],
+      ["language", 76],
+      ["classical", 51],
+      ["edit", 45],
+      ["languages", 42],
+      ["words", 42],
+      ["used", 41],
+      ["roman", 34],
+      ["university", 34],
+      ["greek", 30]
+    ]
+  },
+  {
+    "title": "Etruscan language - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Etruscan_language",
+    "body": [
+      ["etruscan", 251],
+      ["language", 62],
+      ["edit", 54],
+      ["latin", 48],
+      ["languages", 33],
+      ["inscriptions", 32],
+      ["words", 29],
+      ["one", 25],
+      ["alphabet", 24],
+      ["century", 23]
+    ]
+  },
+  {
+    "title": "Colosseum - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Colosseum",
+    "body": [
+      ["colosseum", 164],
+      ["rome", 53],
+      ["roman", 37],
+      ["arena", 29],
+      ["palazzo", 29],
+      ["mw-parser-output", 28],
+      ["retrieved", 27],
+      ["also", 24],
+      ["used", 19],
+      ["coliseum", 18]
+    ]
+  },
+  {
+    "title": "Comune - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Comune",
+    "body": [
+      ["district", 30],
+      ["comune", 25],
+      ["mw-parser-output", 22],
+      ["municipality", 20],
+      ["comuni", 18],
+      ["administrative", 17],
+      ["city", 17],
+      ["italy", 16],
+      ["province", 16],
+      ["region", 16]
+    ]
+  },
+  {
+    "title": "Capital city - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Capital_city",
+    "body": [
+      ["capital", 186],
+      ["city", 87],
+      ["government", 46],
+      ["capitals", 40],
+      ["mw-parser-output", 34],
+      ["located", 32],
+      ["district", 32],
+      ["state", 27],
+      ["seat", 27],
+      ["states", 27]
+    ]
+  },
+  {
+    "title": "Rome (disambiguation) - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rome_(disambiguation)",
+    "body": [
+      ["rome", 71],
+      ["disambiguation", 24],
+      ["edit", 15],
+      ["roman", 11],
+      ["value", 11],
+      ["limit", 11],
+      ["template", 9],
+      ["wikipedia", 7],
+      ["county", 6],
+      ["page", 6]
+    ]
+  },
+  {
+    "title": "World Heritage Committee - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/World_Heritage_Committee",
+    "body": [
+      ["world", 45],
+      ["heritage", 45],
+      ["committee", 24],
+      ["mw-parser-output", 22],
+      ["unesco", 21],
+      ["december", 18],
+      ["july", 13],
+      ["limit", 12],
+      ["2017\u20132021", 12],
+      ["list", 11]
+    ]
+  },
+  {
+    "title": "World Heritage Site - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/World_Heritage_Site",
+    "body": [
+      ["heritage", 103],
+      ["world", 99],
+      ["unesco", 53],
+      ["sites", 43],
+      ["cultural", 36],
+      ["list", 31],
+      ["site", 30],
+      ["natural", 27],
+      ["convention", 25],
+      ["mw-parser-output", 22]
+    ]
+  }
+]
