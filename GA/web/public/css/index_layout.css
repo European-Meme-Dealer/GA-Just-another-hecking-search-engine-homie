@@ -1,107 +1,45 @@
-Body
-{
-	
-margin: 0px;
-	
-height: 100vh;
+#searchContainer {
+  justify-content: left;
+  display: flex;
+  height: 100%;
+  width: 90%;
+  align-items: center;
 }
 
-#SearchBar
-{
-	
-width: 100%;
-	
-margin-left: 5px;
+#main {
+  width: 40vw;
+  flex-wrap: wrap;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#Search_container
-{
-    width: 80%;
+#Top {
+  justify-content: end;
+  display: flex;
+  height: 5vh;
+  align-items: center;
 }
 
-#Main_containerSearch
-{
-	
-}
-#Main_container
-{
-
-width: 40vw;
-
-flex-wrap: wrap;
-
-height: 5vh;
-
-display: flex;
-
-justify-content: space-between;
-
-align-items: center;
-}
-#Top
-{
-	
-justify-content: end;
-	
-display: flex;
-	
-height: 5%;
-	
-align-items: center;
+#mainContainer {
+  height: 87vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#Main
-{
-	
-height: 86%;
-	
-width: 100%;
-	
-display: flex;
-	
-flex-direction: column;
-	
-align-items: center;
-	
-justify-content: center;
-}
-#Logo_container
-{
-	
-height: 10vh;
-	
-margin-right: 20px;
-	
-display: flex;
-	
-justify-content: center;
-	
-align-items: center;
-	
-font-family: 'Roboto', sans-serif;
-}
-#Button_searchBar
-{
-	margin-right: 10px;
-}
-#Footer
-{
-    align-items: center;
-    display: flex;
-    height: 8.9%;
-    justify-content: space-evenly;
+#Logo_container {
+  height: 10vh;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Button_Footer
-{
-	
-display: flex;
-	
-height: 30px;
-	
-min-width: 110px;
-	
-justify-content: center;
-	
-align-items: center;
+#searchButton {
+  height:100%;
+  width:10%;
 }

@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang='sv'>
+<%- include('partials/head'); -%>
 
-<head>
-	<title> JAHSEH </title>
-	<meta charset='UTF-8'>
-	<link rel='Icon' href='../img/XTree.png'>
-	<link rel='Stylesheet' href='../css/Main.css'>
-	<link rel='Stylesheet' href='../css/Index_design.css'>
+  <link rel='Stylesheet' href='../css/Index_design.css'>
 	<link rel='Stylesheet' href='../css/index_layout.css'>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
 
 </head>
 
@@ -19,19 +11,19 @@
 			Just Another Hecking Search Engine Homie
 		</div>
 	</div>
-	<div id='Main'>
+	<div id='mainContainer'>
 		<div id='Logo_container'>
-			<img src='../img/XTree.png' id='Img_searchBar'> </img>
+
+      <%- include('../public/img/XTree.svg'); -%>
+
 			<b>JAHSEH</b>
 		</div>
-		<div id='Main_container'>
-			<div id='Search_container'>
+		<div id='main'>
+			<div id='searchContainer'>
 				<form method="GET" action="/output">
-					<input type='text' placeholder='Search..' name='search' id='SearchBar'>
+					<input type='text' placeholder='Search..' name='search' id='searchBar'>
 			</div>
-			<div id='Button_searchContainer'>
-				<button type='submit' id='Button_searchBar'><i class='fa fa-search'></i></button>
-			</div>
+				<button type='submit' id='searchButton'><i class='fa fa-search'></i></button>
 		</div>
 	</div>
 	<%- include('partials/footer'); -%>

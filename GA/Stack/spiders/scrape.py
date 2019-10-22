@@ -60,10 +60,6 @@ class ScrapeSpider(CrawlSpider):
 
         yield item
 
-        inp = input("Press Yes to exit...")
-        if inp == "y":
-            raise scrapy.exceptions.CloseSpider(reason='cancelled')
-
         for url in response.xpath('//a/@href').extract():
             if url and not url.startswith('#'):
                 #self.logger.debug(urljoin(response.url, url))
