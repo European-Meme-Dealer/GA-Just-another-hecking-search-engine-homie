@@ -1,33 +1,45 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const http = require("http");
-const fs = require("fs");
+const express = require('express');
+const mongoose = require('mongoose');
+const Page = require('./models/page');
+const config = require('./config');
+const http = require('http');
+const fs = require('fs');
 
 const app = express();
 const server = http.createServer(app);
 
-app.set("view engine", "ejs");
+mongoose.connect(config.dbURL, { reconnectTries: 5 });
 
-app.use(express.static(__dirname + "/public"));
+app.set('view engine', 'ejs');
 
-app.get("/", (req, res) => {
-  res.render("index");
+app.use(express.static(__dirname + '/public'));
+
+app.get('/', (req, res) => {
+  res.render('index');
 });
 
-app.get("/about", (req, res) => {
-  res.render("about");
+app.get('/about', (req, res) => {
+  res.render('about');
 });
 
-app.get("/contacts", (req, res) => {
-  res.render("contacts");
+app.get('/contacts', (req, res) => {
+  res.render('contacts');
 });
 
-app.get("/output", (req, res) => {
-  fs.readFile("./output.json", (err, json) => {
+/*
+app.get('/output', (req, res) => {
+  fs.readFile('./output.json', (err, json) => {
     let obj = JSON.parse(json);
     let ans = search(obj, req.query.search);
 
-    res.render("output", { obj: ans, easteregg: req.query.search });
+    res.render('output', { obj: ans, easteregg: req.query.search });
+  });
+});
+*/
+
+app.get('/output', (req, res) => {
+  Page.find({}, (err, data) => {
+    res.render('output', { obj: data, easteregg: req.query.search });
   });
 });
 
@@ -38,6 +50,6 @@ function search(obj, searchWord) {
   );
 }
 
-server.listen(3000, () => {
-  console.log("listening on *:3000");
+server.listen(config.port, () => {
+  console.log('listening on *:' + config.port);
 });
