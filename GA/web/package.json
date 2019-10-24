@@ -1,7 +1,6 @@
 {
   "name": "jahseh_search",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -13,5 +12,6 @@
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "nodemon": "^1.19.3"
-  }
+  },
+  "description": ""
 }
