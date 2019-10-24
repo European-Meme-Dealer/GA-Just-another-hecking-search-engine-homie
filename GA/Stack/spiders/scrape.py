@@ -18,8 +18,7 @@ from nltk.corpus import stopwords
 class ScrapeSpider(CrawlSpider):
     name = 'scrape'
     allowed_domains = []
-    start_urls = ['https://en.wikipedia.org/wiki/Rome',
-                  'https://www.youtube.com', 'https://stackoverflow.com/questions']
+    start_urls = ['https://www.w3schools.com/html', 'https://en.wikipedia.org/wiki/Rome', 'https://stackoverflow.com/questions']
     rules = (
         Rule(LinkExtractor(), callback='parse_item', follow=True),
     )
@@ -42,7 +41,7 @@ class ScrapeSpider(CrawlSpider):
 
     def clean_string(self, my_string):
         new_string = my_string
-        for c in ['/', '\'', '\n', '\t', '[', ']', '{', '}', '"', '(', ')', '.', ',', '?', ':', ';', '^', "'"]:
+        for c in ['/', '\'', '\n', '\t', '[', ']', '{', '}', '"', '(', ')', '.', ',', '?', ':', ';', '^', "'", '-', '%', '#', '>', '<']:
             if c in my_string:
                 new_string = new_string.replace(c, ' ')
 
@@ -53,10 +52,11 @@ class ScrapeSpider(CrawlSpider):
         item = StackItem()
         item['title'] = response.xpath('//title/text()').extract_first()
         item['url'] = response.url
-        text = self.clean_string(
-            ''.join(response.xpath("//body//text()").extract()).strip().lower())
-        text = self.remove_stopwords(text)
-        item['body'] = self.get_common_words(text, 10)
+        cleanedText = self.clean_string(
+            ''.join(response.xpath('//body//text()').extract()).strip().lower())
+        noStopWords = self.remove_stopwords(cleanedText)
+        item['body'] = self.get_common_words(noStopWords, 10)
+        item['summary'] = response.xpath("//meta[contains(translate(@name, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'description')]/@content | (//p//text())[position() < 6]").extract_first(default='')
 
         yield item
 
