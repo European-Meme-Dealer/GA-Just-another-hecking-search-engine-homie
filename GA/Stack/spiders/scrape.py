@@ -50,13 +50,14 @@ class ScrapeSpider(CrawlSpider):
     def parse_item(self, response):
 
         item = StackItem()
-        item['title'] = response.xpath('//title/text()').extract_first()
+        item['title'] = response.xpath('//title/text()').extract_first(default='')
         item['url'] = response.url
         cleanedText = self.clean_string(
             ''.join(response.xpath('//body//text()').extract()).strip().lower())
         noStopWords = self.remove_stopwords(cleanedText)
         item['body'] = self.get_common_words(noStopWords, 10)
         item['summary'] = response.xpath("//meta[contains(translate(@name, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'description')]/@content | (//p//text())[position() < 6]").extract_first(default='')
+        item['lang'] = response.xpath("//html//@lang").extract_first(default='en')
 
         yield item
 

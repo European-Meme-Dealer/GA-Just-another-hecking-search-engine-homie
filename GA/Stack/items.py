@@ -14,3 +14,4 @@ class StackItem(scrapy.Item):
     url = scrapy.Field()
     body = scrapy.Field()
     summary = scrapy.Field()
+    lang = scrapy.Field()

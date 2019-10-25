@@ -39,7 +39,8 @@ app.get('/output', (req, res) => {
 
 app.get('/output', (req, res) => {
   Page.find({}, (err, data) => {
-    res.render('output', { obj: data, easteregg: req.query.search });
+    let ans = search(data, req.query.search);
+    res.render('output', { obj: ans, easteregg: req.query.search });
   });
 });
 
@@ -47,7 +48,7 @@ function search(obj, searchWord) {
   return obj.filter(
     o =>
       o.body.some(k => k.includes(searchWord.toLowerCase())) || o.title.toLowerCase().includes(searchWord.toLowerCase())
-  );
+  ).filter(o => (o.lang === 'en'));
 }
 
 server.listen(config.port, () => {

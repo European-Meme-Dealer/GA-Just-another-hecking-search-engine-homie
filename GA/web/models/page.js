@@ -4,7 +4,8 @@ const pageSchema = new mongoose.Schema({
   title: String,
   url: String,
   body: Array,
-  summary: Array
+  summary: String,
+  lang: String
 },
 {collection: 'pages'}
 );
