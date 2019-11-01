@@ -3,12 +3,11 @@ const mongoose = require('mongoose');
 const Page = require('./models/page');
 const config = require('./config');
 const http = require('http');
-const fs = require('fs');
 
 const app = express();
 const server = http.createServer(app);
 
-mongoose.connect(config.dbURL, { reconnectTries: 5 });
+mongoose.connect(config.dbURL, { reconnectTries: 5, useNewUrlParser: true, useUnifiedTopology: true });
 
 app.set('view engine', 'ejs');
 
@@ -26,29 +25,18 @@ app.get('/contacts', (req, res) => {
   res.render('contacts');
 });
 
-/*
-app.get('/output', (req, res) => {
-  fs.readFile('./output.json', (err, json) => {
-    let obj = JSON.parse(json);
-    let ans = search(obj, req.query.search);
-
-    res.render('output', { obj: ans, easteregg: req.query.search });
-  });
-});
-*/
-
 app.get('/output', (req, res) => {
   Page.find({}, (err, data) => {
     let ans = search(data, req.query.search);
-    res.render('output', { obj: ans, easteregg: req.query.search });
-  });
+    res.render('output', { obj: ans });
+  }).lean();
 });
 
 function search(obj, searchWord) {
   return obj.filter(
     o =>
       o.body.some(k => k.includes(searchWord.toLowerCase())) || o.title.toLowerCase().includes(searchWord.toLowerCase())
-  ).filter(o => (o.lang === 'en'));
+  ).filter(o => (o.lang.includes('en'))).sort((a, b) => (b.searchWord - a.searchWord));
 }
 
 server.listen(config.port, () => {

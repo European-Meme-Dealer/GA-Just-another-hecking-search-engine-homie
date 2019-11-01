@@ -7,7 +7,7 @@ const pageSchema = new mongoose.Schema({
   summary: String,
   lang: String
 },
-{collection: 'pages'}
+{ collection: 'pages' }
 );
 
 module.exports = mongoose.model('Page', pageSchema);

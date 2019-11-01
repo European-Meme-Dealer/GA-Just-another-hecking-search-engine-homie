@@ -9,16 +9,13 @@
 
 	<%- include('partials/top_search'); -%>
 
-	<% if (easteregg == 'homer') { %>
-	<object data="../img/homer.svg" width="400" height="400"></object>
-	<% } %>
-
 	<div id='mainContainer'>
 
 		<% obj.forEach(o => { %>
 
 		<div class='URL_container'>
       <div class='URL'> <%= o.title %> </div>
+      <div class='URL'> <%= o.body %> </div>
 			<div class='URL_info'>
 				<a href="<%= o.url %>"><%= o.url %></a>
 			</div>
