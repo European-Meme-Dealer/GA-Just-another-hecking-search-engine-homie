@@ -25,18 +25,25 @@ app.get('/contacts', (req, res) => {
   res.render('contacts');
 });
 
+// app.get('/output', (req, res) => {
+//   Page.find({}, (err, data) => {
+//     let ans = search(data, req.query.search);
+//     res.render('output', { obj: ans });
+//   }).lean();
+// });
+
 app.get('/output', (req, res) => {
-  Page.find({}, (err, data) => {
-    let ans = search(data, req.query.search);
-    res.render('output', { obj: ans });
-  }).lean();
+  const data = require('./output.json')
+  let ans = search(data, req.query.search.toLowerCase());
+  res.render('output', { obj: ans });
 });
 
 function search(obj, searchWord) {
   return obj.filter(
     o =>
-      o.body.some(k => k.includes(searchWord.toLowerCase())) || o.title.toLowerCase().includes(searchWord.toLowerCase())
-  ).filter(o => (o.lang.includes('en'))).sort((a, b) => (b.searchWord - a.searchWord));
+      Object.keys(o.body)
+      .some(k => k.includes(searchWord))|| o.title.toLowerCase().includes(searchWord) && (o.lang.includes('en')))
+      .sort((a, b) => (b.body[searchWord] - a.body[searchWord]));
 }
 
 server.listen(config.port, () => {
