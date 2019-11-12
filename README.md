@@ -10,3 +10,8 @@ Start headless server with ``npm run app.js``
 Spider:  
 Navigate to /stack/  
 run web crawler using ``scrapy crawl scrape``  
+
+Git:
+Add changes using ``git add .``
+Commit to local with ``git commit -am "<insert comment>"``
+Push to remote repository with ``git push``
