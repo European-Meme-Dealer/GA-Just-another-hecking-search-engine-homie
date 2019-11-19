@@ -31,7 +31,6 @@ app.get('/output', (req, res) => {
   fs.readFile('./output.json', (err, json) => {
     let obj = JSON.parse(json);
     let ans = search(obj, req.query.search);
-
     res.render('output', { obj: ans, easteregg: req.query.search });
   });
 });
