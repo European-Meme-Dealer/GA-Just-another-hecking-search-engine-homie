@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "develop": "nodemon app.js"
+    "dev": "nodemon app.js"
   },
   "author": "Oliver Grass",
   "license": "ISC",

@@ -25,7 +25,7 @@ class ScrapeSpider(CrawlSpider):
 
     def get_common_words(self, text, amount):
         c = Counter(text.split())
-        return c.most_common(amount)
+        return dict(c.most_common(amount))
 
     def remove_stopwords(self, text):
         stopWords = set(stopwords.words('english'))
@@ -39,6 +39,7 @@ class ScrapeSpider(CrawlSpider):
 
         return ' '.join(wordsFiltered)
 
+    # remove unnecessary chars
     def clean_string(self, my_string):
         new_string = my_string
         for c in ['/', '\'', '\n', '\t', '[', ']', '{', '}', '"', '(', ')', '.', ',', '?', ':', ';', '^', "'", '-', '%', '#', '>', '<']:
