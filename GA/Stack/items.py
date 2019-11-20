@@ -15,3 +15,4 @@ class StackItem(scrapy.Item):
     body = scrapy.Field()
     summary = scrapy.Field()
     lang = scrapy.Field()
+    pagerank = scrapy.Field()

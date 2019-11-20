@@ -25,24 +25,12 @@ app.get('/contacts', (req, res) => {
   res.render('contacts');
 });
 
-<<<<<<< HEAD
-/*
-app.get('/output', (req, res) => {
-  fs.readFile('./output.json', (err, json) => {
-    let obj = JSON.parse(json);
-    let ans = search(obj, req.query.search);
-    res.render('output', { obj: ans, easteregg: req.query.search });
-  });
-});
-*/
-=======
 // app.get('/output', (req, res) => {
 //   Page.find({}, (err, data) => {
 //     let ans = search(data, req.query.search);
 //     res.render('output', { obj: ans });
 //   }).lean();
 // });
->>>>>>> 066008de0ffaf8cec3cc7ada517425d5447167c2
 
 app.get('/output', (req, res) => {
   const data = require('./output.json')

@@ -59,10 +59,12 @@ class ScrapeSpider(CrawlSpider):
         item['body'] = self.get_common_words(noStopWords, 10)
         item['summary'] = response.xpath("//meta[contains(translate(@name, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'description')]/@content | (//p//text())[position() < 6]").extract_first(default='')
         item['lang'] = response.xpath("//html//@lang").extract_first(default='en')
+        item['pagerank'] = #
 
         yield item
 
         for url in response.xpath('//a/@href').extract():
             if url and not url.startswith('#'):
+                #
                 #self.logger.debug(urljoin(response.url, url))
                 scrapy.http.Request(urljoin(response.url, url))

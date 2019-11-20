@@ -1,3 +1,8 @@
+:root
+{
+  --background-secondary: #EEEEEE;
+}
+
 #searchContainer {
   justify-content: left;
   display: flex;
@@ -20,6 +25,7 @@
   display: flex;
   height: 5vh;
   align-items: center;
+  background-color: var(--background-secondary);
 }
 
 #mainContainer {

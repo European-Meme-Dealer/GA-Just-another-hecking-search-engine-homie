@@ -10,8 +10,9 @@
 
 :root {
   --text-color: #000;
-  --background-primary: #FAFAFA;
+  --background-primary: #ffffff;
   --background-secondary: #EEEEEE;
+  --logo-primary: #ba0b20;
 }
 
 body {
@@ -48,7 +49,7 @@ p {
 
 svg {
   height: 100%;
-  fill: var(--text-color);
+  fill: var(--logo-primary);
 }
 
 i {
@@ -126,5 +127,6 @@ footer {
     --text-color: #fff;
     --background-primary: #121212;
     --background-secondary: #212121;
+    --logo-primary:#fff;
   }
 }
